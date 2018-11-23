@@ -1,6 +1,6 @@
 
 
-import * as verovio from '../vendor/verovio.js'
+import {verovio} from "verovio";
 
 export default class DummyClass {
   constructor() {
