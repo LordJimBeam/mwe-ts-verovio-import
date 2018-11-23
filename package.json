@@ -1,0 +1,26 @@
+{
+  "name": "mwe",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "dist/mwe.umd.js",
+  "module": "dist/mwe.es5.js",
+  "typings": "dist/types/mwe.d.ts",
+  "files": [
+    "dist"
+  ],
+  "author": "Simon Waloschek <simon.waloschek@posteo.de>",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc --module commonjs && rollup -c rollup.config.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^10.11.0",
+    "colors": "^1.3.2",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.67.0",
+    "rollup-plugin-commonjs": "^9.1.8",
+    "rollup-plugin-typescript2": "^0.18.0",
+    "typescript": "^3.0.3"
+  }
+}
